@@ -1,0 +1,35 @@
+// Size
+@mixin size ($height, $width: $height) {
+  height: $height;
+  width: $width;
+}
+
+// Can giua
+@mixin centerAbsolute($pos) {
+  position: absolute;
+  @if $pos == "both" {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+  } @else if $pos == "left" {
+   left: 50%;
+   transform: translateX(-50%);
+  } @else if $pos == "top" {
+   top: 50%;
+   transform: translateY(-50%);
+  }
+ }
+
+//  Border-radius
+@mixin border-radius($all: null, $tl: $all, $tr: $all, $btl: $all, $btr: $all) {
+  border-top-left-radius: $tl;
+  border-top-right-radius: $tr ;
+  border-bottom-right-radius: $btr;
+  border-bottom-left-radius: $btl;
+}
+
+// Font
+@mixin font ($size: 12px, $weight: 400) {
+  font-size: $size;
+  font-weight: $weight;
+}

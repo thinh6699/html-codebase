@@ -1,0 +1,20 @@
+.nav {
+  border-bottom: 1px solid $border-color;
+  &-item {
+    margin: 0 16px;
+    & .nav-link {
+      @include font (13px, 500);
+      color: $text-color;
+      text-transform: capitalize;
+      padding: 8px;
+    }
+    & .nav-link--active {
+      border-bottom: 4px solid $main-color;
+      color: $main-color;
+    }
+    & .nav-link:hover {
+      border-bottom: 4px solid $main-color;
+      color: $main-color;
+    }
+  }
+}

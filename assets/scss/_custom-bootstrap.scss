@@ -1,0 +1,29 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1270px;
+  }
+}
+
+.btn-primary {
+  background-color: $bg-facebook !important;
+}
+
+.btn-warning {
+  background-color: $quantity-cart !important;
+}
+
+.btn-info {
+  background-color: $bg-zalo !important;
+}
+
+.btn-danger {
+  background-color: $bg-google !important;
+}
+
+.text-primary {
+  color: $main-color !important;
+}
+
+.btn-outline-primary {
+  border-color: $main-color;
+}

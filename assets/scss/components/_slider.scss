@@ -1,0 +1,8 @@
+  .carousel {
+    & .slickslide {
+      margin:6px;
+      & img {
+        width:100%;
+      }
+    }
+  }

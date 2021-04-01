@@ -1,0 +1,14 @@
+.btn-search {
+  background-color: $main-color;
+  @include size ($btn-search-height, 140px);
+  @include border-radius(null, 0px, 2px, 0px, 2px);
+  box-shadow: none !important;
+}
+
+.btn-social {
+  @include size (41px, 236px);
+  box-shadow: none !important;
+  border: none !important;
+}
+
+

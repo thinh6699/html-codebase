@@ -1,0 +1,7 @@
+.star {
+  color: $star;
+  font-size: 9px;
+  & i.rated {
+    color: $rated;
+  }
+}

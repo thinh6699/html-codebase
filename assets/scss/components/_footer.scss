@@ -1,0 +1,159 @@
+footer {
+  & .news {
+    background-color: $bg-regis-news;
+
+    & .content {
+      height: 100px;
+      padding-top: 32px;
+
+      & .img {
+        margin-top: -50px;
+        margin-right: 20px;
+
+        & img {
+          width: 163px;
+        }
+      }
+
+      & .regis {
+        margin-right: 30px;
+
+        & span {
+          @include font (13px, 700);
+        }
+        & span:first-child {
+          font-size: 16px;
+        }
+      }
+
+      & .news-form {
+        & .input-news {
+          & input {
+            @include size(34px, 345px);    
+            padding: 6px 12px;
+            margin-right: 10px;
+          }
+          & input:focus {
+            border-color: #66afe9;           
+            box-shadow: 0px 1px 1px inset rgba(0, 0, 0, 0.08),
+              0px 0px 8px rgba(102, 175, 233, 0.6);
+          }
+        }
+
+        & .btn-info {
+          background-color: #00afef;
+          font-size: 14px;
+          padding: 6px 12px;
+          height: 34px;
+          border: none;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
+  & .list {
+    padding: 40px 0;
+    border-bottom: 1px solid $border-color;
+    & .item {
+      h5 {
+        margin: 0px 0px 17px;
+        color: $text-color;
+        font: {
+          size: 13px;
+          weight: 500;
+        }
+        text-transform: uppercase;
+      }
+
+      & .store-title {
+        margin: 36px 0 17px 0;
+        color: $text-color;
+        @include font (13px, 500);
+        text-transform: uppercase;
+      }
+
+      & .hotline {
+        color: $text-hotline;
+        @include font (14px, 500);
+        line-height: 18px;
+        & .link {
+          color: $text-hotline;
+        }
+      }
+
+      & p {
+        margin-bottom: 10px;
+      }
+
+      & .sm-text {
+        display: block;
+        margin-bottom: 11px;
+        color: $text-color;
+        font-size: 12px;
+        text-decoration: none;
+      }
+
+      & .security {
+        color: $text-color;
+        font-size: 12px;
+        & a {
+          color: $text-color;
+          text-decoration: none;
+        }
+      }
+
+      & p .icon {
+        display: inline-block;
+        margin-right: 7px;
+        margin-bottom: 7px;
+        vertical-align: middle;
+      }
+    }
+    & .item:not(:first-child) {
+      flex-basis: 226px;
+    }
+  }
+
+  & .address {
+    padding: 40px 0;
+    & .address-info {
+      width: 40%;
+      margin-left: 20px;
+
+      & .address-title {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+      & .address-text {
+        font-size: 11px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  & .copyright {
+    padding: 15px 0 10px 0;
+
+    & .copyright-info {
+
+      & .copyright-text {
+
+        & h5 {
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
+
+        & p {
+          @include font (11px, 500);
+        }
+      }
+
+      & .copyright-logo {
+        width: 226px;
+      }
+    }
+  }
+}

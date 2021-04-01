@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+@import "./variables";
+@import "./bootstrap/scss/bootstrap.scss";
+@import "./slick/slick-theme.scss";
+@import "./slick/slick.scss";
+@import "./custom-bootstrap";
+@import "./mixins";
+@import "./commons";
+
+// Components
+@import "./components/button";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/breadcrumb";
+@import "./components/star-rating";
+@import "./components/input-form";
+@import "./components/slider";
+@import "./components/nav";
+@import "./components/advertise-text";
+@import "./components/pagination";
+
+// Pages
+@import "./pages/layout-default";
