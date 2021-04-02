@@ -22,13 +22,8 @@ $(document).ready(function(){
 //   $(".card-img").height(tallest);
 // });
 
-var navlinks = document.querySelectorAll(".nav-link");
-console.log(navlinks);
-for (i = 0; i < navlinks.length; i++) {
-  var navlink = navlinks[i];
-  console.log(navlink);
-  }
-  navlink.onclick = myFunction;
-  function myFunction() {
-    console.log("xin chao");
-  }
+
+// $('#myTab a').on('click', function (e) {
+//   e.preventDefault()
+//   $(this).tab('show')
+// })

@@ -1,18 +1,21 @@
 .nav {
   border-bottom: 1px solid $border-color;
-  &-item {
+}
+.nav-tabs {
+  & .nav-link:hover {
+    border-bottom: 4px solid $main-color;
+    color: $main-color;
+  }
+  & .nav-item {
     margin: 0 16px;
     & .nav-link {
-      @include font (13px, 500);
+      @include font(13px, 500);
       color: $text-color;
       text-transform: capitalize;
       padding: 8px;
+      border: none;
     }
-    & .nav-link--active {
-      border-bottom: 4px solid $main-color;
-      color: $main-color;
-    }
-    & .nav-link:hover {
+    & .active {
       border-bottom: 4px solid $main-color;
       color: $main-color;
     }
